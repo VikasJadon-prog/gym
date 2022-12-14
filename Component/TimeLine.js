@@ -16,12 +16,12 @@ import Typography from '@mui/material/Typography';
 
 export default function OutlinedTimeline() {
   return (
-    <Box p={1} sx={{ml:3,mt:2}}>
-      <Typography variant="h6" gutterBottom   sx={{fontSize:15,fontWeight:'bold',fontFamily: "Roboto",fontColor:"#021934"}}>
-        Recent Search
+    <Box sx={{mt:3}}>
+      <Typography variant="h6" gutterBottom   sx={{ml:4,fontSize:15,fontWeight:'bold',fontColor:"#021934"}}>
+        Recent Searches
       </Typography>
-      <Timeline sx={{ml:-30}}>
-      <TimelineItem>
+      
+      <TimelineItem >
         <TimelineSeparator>
           <TimelineDot variant="outlined" color="secondary" />
           <TimelineConnector/>
@@ -29,15 +29,15 @@ export default function OutlinedTimeline() {
         <TimelineContent >
           <ListItem
             color="primary"
-            sx={{m:-1.5, width:"35ch"}}
+            sx={{ width:"35ch"}}
           >
-            <ListItemText robot-setsize={12}
+          <ListItemText robot-setsize={8}
               primary=" Mumbai "
-              secondary=" Jan 9 , 2014 | 2 Members "
-            />
-            <ArrowForwardIosOutlinedIcon/>
+               secondary=" Jan 9,2014 | 2 Members "
+          />
+            <ArrowForwardIosOutlinedIcon sx={{color:'#6D6D6D'}}/>
           </ListItem>
-          <Divider component="li" />
+          <Divider component="li"/>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -48,19 +48,18 @@ export default function OutlinedTimeline() {
         <TimelineContent >
           <ListItem
             color="primary"
-            sx={{m:-1.5, width:"35ch"}}
+            sx={{width:"35ch"}}
           >
             <ListItemText robot-setsize={12}
               primary=" Mumbai "
-              secondary=" Jan 9 , 2014 | 2 Members "
+              secondary=" Jan 9,2014 | 2 Members "
             />
-            <ArrowForwardIosOutlinedIcon/>
+            <ArrowForwardIosOutlinedIcon sx={{color:'#6D6D6D'}}/>
           </ListItem>
           <Divider component="li" />
         </TimelineContent>
       </TimelineItem>
      
-    </Timeline>
     </Box>
   );
 }

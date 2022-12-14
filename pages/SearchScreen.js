@@ -7,7 +7,6 @@ const Card = () => {
   return (
      <Box sx={{ backgroundColor: "#F3F3F3"}}>
         <Search/>
-        
         <TimeLine/>
      </Box>
   )
